@@ -1,14 +1,14 @@
---- 
+---
 - name: DOWNLOAD PROCESS
-  hosts: local
-  user: ansible
-  become: true
-  connection: local
-
+  hosts: 192.168.122.147
+  remote_user: root
   roles:
-    - role: sshpassDownload
-      v_usr: user
-      v_pass: password 
-      v_server: server
-      v_remotePath: /path1/path2/
-      v_localPath: /path1/path2/path3
+    - role: sshpassDownloadProxy-master.tar.gz
+      v_usr: usuario2
+      v_pass: 123456789
+      v_server: 192.168.122.22
+      upload_this_file: archivoprueba
+      v_remotePath: home/
+      v_localPath: /root/
+      proxy: 192.168.122.106
+      puerto: 8080

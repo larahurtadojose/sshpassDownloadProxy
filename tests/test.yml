@@ -7,7 +7,7 @@
       v_usr: usuario2
       v_pass: 123456789
       v_server: 192.168.122.22
-      upload_this_file: archivoprueba
+      download_this_file: archivoprueba
       v_remotePath: home/
       v_localPath: /root/
       proxy: 192.168.122.106

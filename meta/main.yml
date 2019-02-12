@@ -1,6 +1,6 @@
 galaxy_info:
   author: Juan Lara, MS
-  description: Upload a file using sshpass from local to a sftp server.
+  description: Download a file using sshpass from a sftp server to local.
   company: 
 
   # If the issue tracker for your role is not on github, uncomment the

@@ -1,0 +1,14 @@
+--- 
+- name: DOWNLOAD PROCESS
+  hosts: local
+  user: ansible
+  become: true
+  connection: local
+
+  roles:
+    - role: sshpassDownload
+      v_usr: user
+      v_pass: password 
+      v_server: server
+      v_remotePath: /path1/path2/
+      v_localPath: /path1/path2/path3

@@ -1,0 +1,7 @@
+---
+# tasks file for sshpassUpload
+
+- name: upload file "{{ upload_this_file }}"
+  script: uploadSftp.sh "{{ v_usr }}" "{{ v_pass }}" "{{ v_server }}" "{{ v_remotePath }}" "{{ v_localPath }}" "{{ upload_this_file }}" "{{ proxy }}" "{{ puerto }}"
+  tags:
+    - playme
